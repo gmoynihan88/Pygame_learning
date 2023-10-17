@@ -28,6 +28,8 @@ while True:
     snail_x_pos -= 4
     if snail_x_pos < -100: snail_x_pos = 800
     screen.blit(snail_surface,(snail_x_pos, 250))
+    player_rect.left += 1
+    screen.blit(player_surf,player_rect)
 
     pygame.display.update()
     clock.tick(60)
